@@ -10,28 +10,28 @@ const ProductsPreview = () => {
             description: "Advanced electric beds with multi-function controls for critical care environments.",
             image: "https://lh3.googleusercontent.com/aida-public/AB6AXuByphqjY8f-rzFvBuTRUA42wMJuCBhbBIwTXGZC_XpagMZCOwg5hasfzx-w-hn0LeOOOW2k_2p1udr_oZ7stmKfka82MHCXi7p6y5npDnFCIuhvyZq9iNpe6YEYZb-eEj3XlSHWvyeJ70_8PjwV7SPGzSljqkzKsyTp860ptaw8pA2kdJVu9tJ8pqq_ECBKXD5WhzmprMHeOBLtcF8WqBsxg4FvwEydmQCKk171J9OgrS77plCIHhbMOAd2NIUI8gYxxq5mmfx4uQ",
             icon: <Bed size={24} />,
-            link: "/products/icu-beds"
+            link: "/products"
         },
         {
             title: "Ward Furniture",
             description: "Bedside lockers, overbed tables, and visitor chairs optimized for patient wards.",
             image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBYls2dtrUAZ_TaJxN84SVbTHCOTYpY8ey54fs1o_IyJbPEmcEu0LYxXC6wTyHkP3tqPBdi2Mcs4hGAlXJg7bhvkNBCMtY1qyVKH-KLVuArRc91mUenS8S5o4lB13e7kRsasUYOxCLXr49VYBfCs2tjYObQmhl3jeUqqBeds4pGkJ-yojD3Mo_-oaBht6OIFpe4onvDD5UEAcMafMTnTy4Vv8ErfRcfBvM7Si_s6Cd7eKy4zB2B1sCkhl8yqTO3KMm7xmB-o1k54g",
             icon: <Armchair size={24} />,
-            link: "/products/ward-furniture"
+            link: "/products"
         },
         {
             title: "Examination Tables",
             description: "Ergonomic tables for outpatient departments and specialized clinics.",
             image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBj3JGF0soOKu33VmmoHnMeDb2oECXFHiN1dmOTE85FJbsmbr9i2mYAzcGN1ruqGXJjIktE0WnbdxDrjsebW2efy0lYVcgsV9d2Ki-zU7Q2a4C9XPzLllRub3ukmsQZoDPEvNQfhU_U8-8ZEaXCtYk_pwcX3FfpHehw8sZT8HdZOziFycsQIUlQ6ozFfuaLXRLn1S3ax7vSueNnErcx7sJhn-yO14Sb8rbO2HkXOY9Af_NTrBZiHpQveEHfTAFHBjh8NxOXucHBTA",
             icon: <Stethoscope size={24} />,
-            link: "/products/examination-tables"
+            link: "/products"
         },
         {
             title: "Mobility Aids",
             description: "Wheelchairs, stretchers, and trolleys designed for safe and easy transport.",
             image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCzRBk4jYcJEAG6iH22jWGZc-bDQCTtA1-Io8mrpvu0Wd33iyvipiGlqfNf0yBd-khDwf1CE_4BwjFhgWWiVjFHCKWW_qUzJeeT_mRaz16ft-65KvCDquMeUfubfU4Fbun_3FBHsFSbJn0ZekuS8HPqkZyyNmD2riW1uhBAi3cR0o9pzlZSA9KMER_YH3faaPCHq-gte4pRylz5pSLHR2Sfixt2_7Vd8dQ3KEWqaICtk71enLQyt_4CbWyyTxqVQjvQ0xQGestbbw",
             icon: <Accessibility size={24} />,
-            link: "/products/mobility-aids"
+            link: "/products"
         }
     ];
 

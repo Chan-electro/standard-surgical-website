@@ -2,34 +2,38 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const ProductCard = ({ product }) => {
+    const handleBuyNow = () => {
+        const phoneNumber = "919686314869";
+        const message = `Hello, I am interested in the ${product.title} (Serial Number: ${product.sku}). Please provide more details.`;
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    };
+
     return (
         <article className="bg-white dark:bg-surface-dark rounded-xl shadow-sm hover:shadow-xl border border-slate-100 dark:border-slate-700 transition-all duration-300 group flex flex-col h-full overflow-hidden">
             <div className="relative bg-slate-50 dark:bg-slate-800 h-56 p-6 flex items-center justify-center">
                 <img
                     src={product.image}
                     alt={product.title}
-                    className="max-h-full max-w-full object-contain mix-blend-multiply dark:mix-blend-normal group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-contain"
+                    onError={(e) => {
+                        e.target.src = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60";
+                    }}
                 />
-                {product.new && (
-                    <div className="absolute top-3 right-3">
-                        <span className="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">New</span>
-                    </div>
-                )}
             </div>
-            <div className="p-5 flex-1 flex flex-col">
-                <span className="text-xs text-slate-400 dark:text-slate-500 font-mono mb-1">SKU: {product.sku}</span>
-                <h3 className="font-display font-bold text-lg text-slate-800 dark:text-white leading-tight mb-2 group-hover:text-secondary transition-colors">
-                    {product.title}
-                </h3>
-                <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-4">
-                    {product.description}
-                </p>
-                <div className="mt-auto flex items-center justify-between">
-                    <span className="text-xs font-semibold text-primary uppercase tracking-wide">{product.category}</span>
-                    <a className="text-sm font-bold text-secondary hover:text-blue-700 dark:hover:text-blue-400 flex items-center gap-1 group/link" href="#">
-                        View Details
-                        <ArrowRight size={16} className="transition-transform group-hover/link:translate-x-1" />
-                    </a>
+            <div className="p-4">
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 line-clamp-1">{product.title}</h3>
+                <p className="text-xs text-secondary mb-2">SKU: {product.sku}</p>
+                <div className="flex justify-between items-center mt-4">
+                    <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
+                        {product.category}
+                    </span>
+                    <button
+                        onClick={handleBuyNow}
+                        className="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
+                        Buy Now
+                    </button>
                 </div>
             </div>
         </article>
